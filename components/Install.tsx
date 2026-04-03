@@ -1,25 +1,35 @@
 const STEPS = [
   {
     num: "01",
-    title: "Clone & install dependencies",
-    code: `git clone https://github.com/jagdep-singh/VORTEX
-cd vortex
-pip install -r requirements.txt`,
+    title: "Install VORTEX",
+    code: `# Recommended: pipx for isolated CLI apps
+pipx install vortex-agent-cli
+
+# Or install globally
+pip install vortex-agent-cli
+
+# Or from source
+python3 -m pip install . --no-build-isolation`,
   },
   {
     num: "02",
     title: "Set your API key",
     code: `# .env
 API_KEY=your_api_key_here
-BASE_URL= Your provider's base URL (optional, defaults to OpenAI)`,
+BASE_URL=https://api.openai.com/v1
+
+# Or configure model profiles in .ai-agent/config.toml`,
   },
   {
     num: "03",
     title: "Run VORTEX",
-    code: `python3 main.py
+    code: `vortex
 
-# or with a working directory:
-python3 main.py --cwd /path/to/project`,
+# Interactive mode (default)
+vortex "write a hello world program in c"
+
+# With custom working directory
+vortex --cwd /path/to/project`,
   },
   {
     num: "04",

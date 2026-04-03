@@ -2,7 +2,7 @@
 import { useState, useEffect, useRef } from "react";
 
 const LINES = [
-  { type: "prompt", text: "python3 main.py" },
+  { type: "prompt", text: "vortex" },
   { type: "system", text: "▶ VORTEX v1.0 — local coding agent" },
   { type: "system", text: "✓ Scanning workspace..." },
   { type: "system", text: "✓ Building symbol index (47 symbols)" },

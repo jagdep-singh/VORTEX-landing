@@ -73,7 +73,7 @@ export default function Hero() {
               href="#install"
               className="group relative font-mono text-sm text-void bg-cyan px-6 py-3 rounded overflow-hidden transition-all duration-200 hover:shadow-[0_0_30px_rgba(0,229,255,0.5)]"
             >
-              <span className="relative z-10">$ pip install vortex</span>
+              <span className="relative z-10">$ pipx install vortex-agent-cli</span>
             </a>
             <a
               href="#features"
