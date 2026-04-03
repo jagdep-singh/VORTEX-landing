@@ -19,12 +19,12 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 h-14 flex items-center justify-between">
-        <div className="flex items-center gap-3">
+        <a href="/#" className="flex items-center gap-3 hover:text-cyan transition-colors duration-200">
           <span className="text-cyan text-xs font-mono">▶</span>
           <span className="font-display font-bold text-lg tracking-widest text-text-primary">
             VORTEX
           </span>
-        </div>
+        </a>
 
         <div className="hidden md:flex items-center gap-8 font-mono text-xs text-text-secondary">
           {["Features", "Tools", "Install"].map((item) => (
